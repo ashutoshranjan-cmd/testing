@@ -1,0 +1,56 @@
+<!-- this is the basic color changing website -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: 0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        height: 722px;
+        width: 100%;
+      }
+      /* .box {
+          height: 100px;
+          width: 200px;
+          border: 2px solid black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: red;
+        } */
+      button {
+        background-color: red;
+        color: white;
+        height: 100px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px blue;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="data">
+      <div class="box">
+        <button onclick="change()">press me</button>
+      </div>
+    </div>
+    <script>
+      const change = () => {
+       
+            document.querySelector(".container").style.backgroundColor = "blue";
+        }
+    </script>
+  </body>
+</html>
